@@ -16,11 +16,7 @@ SERVER="serverIP"
 DESTINATION="server destination directory"
 USER="user"
 
-#echo $DATEREAL
-#echo "There is no error handling, if it stops uncomment the set-x at the top and run again."
-#sleep 4
-#echo "Ok here we go..."
-#sleep 2
+echo $DATEREAL
 cd /home/ &&
 sudo tar -zcvf abaddon.bk.$DATE.tar.gz mcurry &&
 scp $HOSTNAME.bk.* $USER@$SERVER:$DESTINATION &&
