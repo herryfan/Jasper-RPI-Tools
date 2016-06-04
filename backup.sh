@@ -13,7 +13,7 @@
 DATE=$(date +"%Y%m%d%H%M")
 DATEREAL=$(date +%m/\%d/\%Y\ %H\:%M)
 SERVER="serverIP"
-DESTINATION="server destination directory"
+DESTINATION="/home/example/dir"
 USER="user"
 
 
