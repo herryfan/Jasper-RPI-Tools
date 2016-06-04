@@ -6,7 +6,6 @@
 #	Description: Removes full stock desktop envinronment from  base RPI image.
 #	Note: Some packages can be left behind as dependencies.  Feel free to adjust  or submit PR.
 #	      This is an early version of this script; I am going to be adjusting it to remove everything possible desktop-related.
-#
 
 echo "  Removing Desktop Related Packages"
 sudo apt-get -y remove --auto-remove --purge libx11-.* &&

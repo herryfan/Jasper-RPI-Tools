@@ -3,9 +3,9 @@
 echo "
 ##########################################
 #                                        #
-#	USB Audio Config Tool            #
+#	      usb-audio.sh                     #
 #       By: Matthew Curry                #
-#       Updated: 03/13/2016              #
+#       Updated: 05/31/2016              #
 #                                        #
 #                                        #
 ##########################################"
@@ -18,7 +18,7 @@ echo ""
 
 echo " We are going to setup Alsa to use USB Audio."
 echo " Would you like to make a backup of your alsa-base.conf first?"
-echo " Backup OLD alsa-base.conf (YES/NO)"
+echo " Backup OLD alsa-base.conf (YES/NO) Case sensitive for now."
 echo ""
 read BACKUP
 if [[ $BACKUP == "YES" ]];

@@ -5,8 +5,6 @@
 #	By: Matthew Curry
 #	Date: Unknown
 #	Description: Test your audio from the commandline.
-#
-
 
 echo "Test your audio equipment by speaking into the microphone for 3 seconds"
 echo "Press ENTER to beign"
