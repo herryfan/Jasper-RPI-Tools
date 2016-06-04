@@ -16,9 +16,10 @@ SERVER="serverIP"
 DESTINATION="server destination directory"
 USER="user"
 
+
 echo $DATEREAL
 cd /home/ &&
-sudo tar -zcvf abaddon.bk.$DATE.tar.gz mcurry &&
+sudo tar -zcvf $HOSTNAME.bk.$DATE.tar.gz $USER &&
 scp $HOSTNAME.bk.* $USER@$SERVER:$DESTINATION &&
 rm -fv *.bk.*gz &&
 
