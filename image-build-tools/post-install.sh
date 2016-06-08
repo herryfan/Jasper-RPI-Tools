@@ -22,5 +22,6 @@ echo "PyAudio Fix Completed"
 # Not Core, but Super Common
 sudo pip install wolframalpha
 
+sudo rm -f /home/$USER/pa*tgz 
 
-
+exit
