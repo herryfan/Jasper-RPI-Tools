@@ -3,6 +3,7 @@
 
 # These are just notes recording some items neededing automation...
 # System Packages
+
 sudo apt-get -y install libasound-dev python-dev
 
 # PyAudio / Port Audio Fix
