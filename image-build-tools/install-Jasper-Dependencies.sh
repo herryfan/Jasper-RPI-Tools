@@ -12,7 +12,7 @@ echo " Answer: (yes/no) [Lower Case Only Please]"
 read ANSWER
 echo $ANSWER
 
-if [[ $ANSWER -ne "yes" ]]; then
+if [[ $ANSWER == "yes" ]]; then
 	echo "Installing..."
 	echo "You are now a super hacker...."
 	cd
@@ -25,3 +25,4 @@ else
 	echo " Ok, well we will be here..."
 	echo " USAGE: Answer must be yes or no in lower case"
 exit 0
+
