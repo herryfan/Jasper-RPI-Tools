@@ -1,28 +1,28 @@
 #!/bin/bash
 
-
+USER=pi
 # These are just notes recording some items neededing automation...
 # System Packages
-
-sudo apt-get -y install libasound-dev python-dev
+sudo apt-get -y purge --remove python-pyaudio &&
+sudo apt-get -y install libasound-dev python-all-dev portaudio19-dev
 
 # PyAudio / Port Audio Fix
 # Download Port Audio
-cd
+cd /home/$USER
 wget http://portaudio.com/archives/pa_stable_v19_20140130.tgz
 tar -zxvf pa_stable_v19_20140130.tgz
 cd portaudio
-./configure && make
-sudo make install
-sudo pip install pyaudio
-cd
-rm -Rfv portaudio
+./configure && make &&
+sudo make install &&
+cd /home/$USER
+rm -Rfv /home/$USER/portaudio
 echo "PyAudio Fix Completed"
 
 # Module Python Packages
 # Not Core, but Super Common
 sudo pip install wolframalpha
+sudo rm -f /home/$USER/pa*tgz*
 
-sudo rm -f /home/$USER/pa*tgz 
-
+sudo pip install pyaudio --no-cache
 exit
+
