@@ -26,3 +26,4 @@ else
 	echo " USAGE: Answer must be yes or no in lower case"
 exit 0
 
+fi
