@@ -39,6 +39,7 @@ echo ""
 echo ""
 echo " Rebooting in 10seconds. Ctrl-C to stop."
 sleep 10
-echo "and away we go..
+echo "and away we go.."
+
 reboot
 
