@@ -12,3 +12,5 @@ Miscllaneous Scripts for Jasper Configuration and Troubleshooting.
 * fan.py - Original Example Script for controlling a fan, but can be useful.
 * temperature.py - Simply takes the temperature.  Can be useful if that is a suspect as well.
 * usb-mic-fix.sh - Under audio-tools.  This tool is used to update the order of kernel modules, helping with audio setup.
+* tft-screen-installer.sh - Under installers.  This tools is used to install the needed drivers for most small tft screens.
+
