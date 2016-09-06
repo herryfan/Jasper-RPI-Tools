@@ -8,5 +8,9 @@
 #	Note: Add to crontab like so to start at boot (@reboot /locationofscript/start-jasper.sh)
 
 USER=pi
+JDIR='jasper-client'
 
-nohup /usr/bin/python /home/$USER/jasper/jasper.py &>> /home/$USER/jasper/jasper.log &
+source /home/$USER/.profile
+
+nohup /usr/bin/python /home/$USER/$JDIR/jasper.py &>> /home/$USER/$JDIR/jasper.log &
+

@@ -1,6 +1,8 @@
 #!/bin/bash
 
 USER=pi
+
+echo "This assumes user pi, be sure to update if this has changed"
 # These are just notes recording some items neededing automation...
 # System Packages
 sudo apt-get -y purge --remove python-pyaudio &&

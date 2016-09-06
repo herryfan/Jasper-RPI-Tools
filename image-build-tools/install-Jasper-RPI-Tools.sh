@@ -10,7 +10,7 @@ echo " Answer: (yes/no) [Lower Case Only Please]"
 read ANSWER
 echo $ANSWER
 
-if [[ $ANSWER -ne "yes" ]]; then
+if [[ $ANSWER == "yes" ]]; then
 	echo "Installing Jasper RPI Tools"
 	echo "Wow, you are now officially l33t"
 	cd
@@ -21,3 +21,5 @@ else
 	echo " Tools Not installed"
 	echo " Answer must be yes or no in lower case"
 exit 0
+
+fi
