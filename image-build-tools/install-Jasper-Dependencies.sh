@@ -20,7 +20,13 @@ if [[ $ANSWER == "yes" ]]; then
 	cd RPI-Jasper-Dependencies
 	echo " The files should have been cloned, installing..."
 	sudo dpkg -i *.deb && mv *.tgz ../ && cd .. && rm -Rfv RPI-Jasper-Dependencies &&
-	echo "Files Removed after install" 
+	echo "Files Removed after install"
+	tar -zxvf phonetisaurus.tgz &&
+	cd g014b2b &&
+	echo "Compiling FST for Phonetisaurus." &&
+	./compile-fst.sh &&
+	echo "Completed Compile for FST"
+
 else
 	echo " Ok, well we will be here..."
 	echo " USAGE: Answer must be yes or no in lower case"
