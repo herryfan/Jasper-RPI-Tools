@@ -28,9 +28,7 @@ echo "                     Date:   $DATEREAL
 
   Pull Request Link: https://github.com/mattcurrycom/Jasper-RPI-Tools  "
 read -rsn1 -p"                    Press any key to continue                    "
-exit
 clear
-
 echo " What user would you like to install to? [Example: pi]"
 read USER &&
 echo " Where should we download the Client? [Example: /home/pi]"
