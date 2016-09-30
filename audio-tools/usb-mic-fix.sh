@@ -20,7 +20,7 @@ echo ""
 echo " Updating /etc/modprobe.d/alsa-base.conf "
 sudo echo "options snd_usb_audio index=0
 options snd_bcm2835 index=1
-options snd slots=snd-usb-audio,snd-bcm2835" >> /etc/modprobe.d/alsa-base.conf &&
+options snd slots=snd-usb-audio,snd-bcm2835" > /etc/modprobe.d/alsa-base.conf &&
 echo "Completed Update of alsa-base.conf "
 echo ""
 sleep 1
