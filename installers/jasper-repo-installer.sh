@@ -14,7 +14,7 @@ DATEREAL=$(date +%m/\%d/\%Y\ %H\:%M)
 
 #USER=pi
 #GITDIR=/home/$USER
-#BRANCH=main
+#BRANCH=master
 clear
 
 echo "                     Date:   $DATEREAL
@@ -33,11 +33,11 @@ echo " What user would you like to install to? [Example: pi]"
 read USER &&
 echo " Where should we download the Client? [Example: /home/pi]"
 read GITDIR &&
-echo " What branch ? [Example: main or dev]"
+echo " What branch ? [Example: master or dev]"
 read BRANCH &&
 
 
-if [[ $BRANCH == main ]]; then
+if [[ $BRANCH == master ]]; then
     cd $GITDIR &&
     git clone https://github.com/jasperproject/jasper-client &&
     echo "  Jasper Repo [Master Branch] Cloned into $GITDIR with Branch $BRANCH "
