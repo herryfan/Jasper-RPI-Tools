@@ -1,5 +1,4 @@
-# MANY OF THESE SCRIPTS WILL NO LONGER BE NEEDED AS OF THE VERSION 1.6 (MattCurry.Com) IMAGE.
-
+# Tools Getting a ReVamp - 02/02/2018 #
 
 # Jasper-RPI-Tools
 Miscllaneous Scripts for Jasper Configuration and Troubleshooting.
