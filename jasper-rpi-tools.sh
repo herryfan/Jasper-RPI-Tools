@@ -27,6 +27,7 @@ echo "10. Convert Profile.yml to Dev Syntax.         "
 echo "11. Convert Profile.yml to Master Syntax.      "
 echo "12. Update RPI (OS and FW).                    "
 echo "13. Reboot RPI.                                "
+echo "14. Download Jasper-RPI-Tools Repository.      "
 echo ""
 
 
