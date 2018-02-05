@@ -87,4 +87,6 @@ if [[ $BRANCH == master ]]; then
     echo ""
 fi
 fi
+elif [[ $MENU == 2 ]]; then
+echo "you chose $MENU"
 fi
