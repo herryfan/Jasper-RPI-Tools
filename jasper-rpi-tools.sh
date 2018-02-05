@@ -13,6 +13,7 @@
 JRTDIR=/home/mcurry/CorseHair/GIT/MDC/Jasper-RPI-Tools
 DATE=$(date +"%Y%m%d%H%M")
 DATEREAL=$(date +%m/\%d/\%Y\ %H\:%M)
+JASPREPO=https://github.com/jasperproject/jasper-client
 
 ##################################################
 
@@ -29,11 +30,11 @@ echo "##################################################"
 echo "##################################################"
 echo "# 1.  Install Jasper Repository. (Master OR Dev) "  # Completed
 echo "# 2.  Download Modules Repository. (Master Only) "  # In progress
-echo "# 3.  Test your audio.                (RPI Only) "  
+echo "# 3.  Test your audio.                (RPI Only) "
 echo "# 4.  Fix Audio (Bitrate)-BETA.                  "
 echo "# 5.  Install Jasper as Service.                 "
 echo "# 6.  Install Home Assistant/MQTT Server.        "  # Script Finished
-echo "# 7.  Restart Jasper Service.                    "  
+echo "# 7.  Restart Jasper Service.                    "
 echo "# 8.  Stop Jasper Service.                       "
 echo "# 9.  Install Jasper Dependencies.   (Master/Dev)"
 echo "# 10. Convert Profile.yml to Dev Syntax.         "
