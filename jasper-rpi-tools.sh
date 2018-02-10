@@ -1,9 +1,5 @@
 #!/bin/bash
-<<<<<<< HEAD
-
-=======
 #set -x
->>>>>>> 8861260079dd7a11b42ef681ee3c797bc69bbc79
 ####
 #
 #   Jasper RPI Tools
@@ -12,9 +8,6 @@
 #
 ####
 
-<<<<<<< HEAD
-
-=======
 ##################################################
 #### Variables ####
 JRTDIR=/home/mcurry/CorseHair/GIT/MDC/Jasper-RPI-Tools
@@ -27,7 +20,6 @@ JASPREPO=https://github.com/jasperproject/jasper-client
 # TODO: Menu needs Re-arrangement
 # Breakout items into functions
 # Remove Un-needed Vars
->>>>>>> 8861260079dd7a11b42ef681ee3c797bc69bbc79
 
 
 echo "##################################################"
@@ -36,14 +28,12 @@ echo "##################################################"
 
 
 echo "##################################################"
-<<<<<<< HEAD
 echo "# 1.  Install Jasper Repository. (Master OR Dev) "
 echo "# 2.  Download Modules Repository. (Master Only) "
 echo "# 3.  Test your audio.                (RPI Only) "
 echo "# 4.  Fix Audio (Bitrate)-BETA.                  "
 echo "# 5.  Install Jasper as Service.                 "
 echo "# 6.  Install Home Assistant/MQTT Server.        "
-=======
 echo "# 1.  Install Jasper Repository. (Master OR Dev) "  # Completed
 echo "# 2.  Download Modules Repository. (Master Only) "  # In progress
 echo "# 3.  Test your audio.                (RPI Only) "
@@ -65,13 +55,12 @@ echo ""
 echo "    What would you like to do? "
 echo ""
 
-<<<<<<< HEAD
 read $MENU
 
 echo "You have selected $MENU."
 
 if [[ $MENU == 1 ]];
-  then 
+  then
 
 
 
