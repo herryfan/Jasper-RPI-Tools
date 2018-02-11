@@ -35,22 +35,58 @@ echo " Where should we download the Client? [Example: /home/pi]"
 read GITDIR &&
 echo " What branch ? [Example: master or dev]"
 read BRANCH &&
-
+echo  ""
 
 if [[ $BRANCH == master ]]; then
     cd $GITDIR &&
     git clone https://github.com/jasperproject/jasper-client &&
-    echo "  Jasper Repo [Master Branch] Cloned into $GITDIR with Branch $BRANCH "
+    echo ""
+    echo "  Jasper Repo [Master Branch] Cloned into $GITDIR with Branch $BRANCH " &&
+    echo ""
+
   else if [[ $BRANCH == dev ]]; then
     cd $GITDIR &&
     git clone https://github.com/jasperproject/jasper-client &&
     cd jasper-client &&
     git checkout jasper-dev &&
     cd &&
+    clear
+    echo ""
     echo "  Jasper Repo [Development Branch] Cloned into $GITDIR with Branch $BRANCH "
     echo ""
-exit
+
 fi
 fi
 
+sleep 1
+#### Jasper-RPI-Tools ####
+echo ""
+echo "  Would you like to install the Jasper-RPI-Tools repo? [yes/no]:"
+echo ""
+
+read JRTOOLS
+  if [[ $JRTOOLS == yes ]];
+    then cd && git clone https://github.com/mattcurrycom/Jasper-RPI-Tools.git && echo " Jasper-RPI-Tools Cloned"
+  elif [[ $JRTOOLS == no ]]
+    then  echo " Jasper-RPI-Tools Not Installed."
+  fi
+
+sleep 1
+#### Jasper Modules ####
+echo ""
+echo "  Would you like to install the Jasper-Modules(Master Branch Only) repo? [yes/no]:"
+echo ""
+
+read JRMODULES
+  if [[ $JRMODULES == yes ]];
+    then cd && git clone https://github.com/mattcurrycom/jasper-modules.git && echo " Jasper Modules Cloned, keep in mind this doesn't install them or their dependencies."
+  elif [[ $JRMODULES == no ]]
+    then  echo " Jasper Modules Not Downloaded"
+fi
+sleep 2
+echo ""
+echo ""
+echo "Thank you for using this, if useful please help the project at MattCurry.Com"
+echo ""
+exit
 
